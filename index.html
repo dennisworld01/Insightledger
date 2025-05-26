@@ -1,60 +1,70 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InsightLedger</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InsightLedger</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>InsightLedger</h1>
-        <p>Knowledge. Connections. Innovation.</p>
-        <div class="subscribers">
-            Subscribers: <span id="subscriber-count">0</span>
-        </div>
-    </header>
-    <main>
-        <article>
-            <h2>Top 5 Secrets to Online Dating Success in 2025</h2>
-            <p class="date">Posted on: February 10, 2025</p>
-            <p>Online dating can feel overwhelming—but it doesn’t have to be. Here are 5 secrets to help you find real connections:</p>
-            <ul>
-                <li>Craft a standout profile</li>
-                <li>Be genuine in your conversations</li>
-                <li>Use multiple platforms strategically</li>
-                <li>Set clear intentions</li>
-                <li>Stay consistent and open-minded</li>
-            </ul>
-            <p>Want to try a top-rated dating site? <a href="https://example-affiliate-link.com/dating" target="_blank">Click here</a> to sign up for free and start chatting today!</p>
-            <div class="comments">
-                <h3>Comments</h3>
-                <p><strong>Alice:</strong> This actually helped me improve my profile. Thanks!</p>
-                <p><strong>John:</strong> Just signed up through your link. Appreciate the tips!</p>
-            </div>
-        </article>
-        <article>
-            <h2>AI Tools Every Developer Should Know in 2025</h2>
-            <p class="date">Posted on: March 5, 2025</p>
-            <p>AI is changing the development game. Here are tools you should add to your toolbox:</p>
-            <ul>
-                <li>GitHub Copilot – AI-powered code completion</li>
-                <li>ChatGPT API – Natural language interaction in apps</li>
-                <li>Replit Ghostwriter – Cloud-based AI coding</li>
-                <li>Codeium – Free AI dev assistant</li>
-            </ul>
-            <p>Looking for AI tools that boost your workflow? <a href="https://example-affiliate-link.com/ai-tools" target="_blank">Explore this toolkit</a> and power up your productivity!</p>
-            <div class="comments">
-                <h3>Comments</h3>
-                <p><strong>DevMike:</strong> Copilot saved me hours! Thanks for sharing.</p>
-                <p><strong>TechieSue:</strong> This list is gold—Codeium was new to me!</p>
-            </div>
-        </article>
-    </main>
-    <footer>
-        <p>&copy; 2015 - <span id="current-year"></span> InsightLedger</p>
-    </footer>
-    <script src="js/script.js"></script>
-</body>
+  <header class="main-header">
+    <div class="container">
+      <h1>InsightLedger</h1>
+      <p class="tagline">Knowledge. Connections. Innovation.</p>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dating-blog.html">Dating</a></li>
+          <li><a href="tech-blog.html">Tech</a></li>
+        </ul>
+      </nav>
+      <div class="subscribers">
+        Subscribers: <span id="subscriber-count">2700</span>
+      </div>
+    </div>
+  </header>  <main class="container">
+    <section class="intro">
+      <h2>Welcome to InsightLedger</h2>
+      <p>Your destination for insightful articles on dating, tech, lifestyle, and more.</p>
+    </section><section class="blogs-preview">
+  <article>
+    <img src="images/dating-header.jpg" alt="Dating Blog">
+    <h3><a href="dating-blog.html">Top 5 Secrets to Online Dating Success in 2025</a></h3>
+    <p>Discover key tips to succeed in online dating. This article shares real-world advice to help you connect meaningfully...</p>
+  </article>
+
+  <article>
+    <img src="images/tech-header.jpg" alt="Tech Blog">
+    <h3><a href="tech-blog.html">AI Tools Every Developer Should Know in 2025</a></h3>
+    <p>Explore the top AI tools empowering developers in 2025. Boost your productivity and stay ahead of the curve...</p>
+  </article>
+</section>
+
+  </main>  <footer>
+    <div class="container">
+      <p>&copy; 2015 - <span id="current-year"></span> InsightLedger. All rights reserved.</p>
+    </div>
+  </footer>  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const subscriberCountElement = document.getElementById("subscriber-count");
+      const stored = localStorage.getItem("subscriberData");
+      const today = new Date().toISOString().slice(0, 10);
+
+      let data = stored ? JSON.parse(stored) : {
+        count: 2700,
+        lastUpdated: today
+      };
+
+      if (data.lastUpdated !== today) {
+        const increase = Math.floor(Math.random() * 401) + 100; // Increase by 100–500 daily
+        data.count += increase;
+        data.lastUpdated = today;
+        localStorage.setItem("subscriberData", JSON.stringify(data));
+      }
+
+      subscriberCountElement.textContent = data.count;
+
+      // Update footer year
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+    });
+  </script></body>
 </html>
