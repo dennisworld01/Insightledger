@@ -15,8 +15,8 @@ header.main-header {
   text-align: center;
 }
 
-.tech-header-bg {
-  background: #1a1a1a;
+.gray-header {
+  background-color: #555;
   color: white;
 }
 
