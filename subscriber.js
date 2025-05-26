@@ -3,15 +3,20 @@
   const launchDate = new Date('2015-01-01');
   const today = new Date();
   const daysSinceLaunch = Math.floor((today - launchDate) / (1000 * 60 * 60 * 24));
-  const randomGrowth = () => Math.floor(Math.random() * (100 - 50 + 1)) + 50;
-  let totalSubscribers = baseSubscribers;
 
+  // Generate total subscribers
+  const subscriberGrowth = () => Math.floor(Math.random() * (20 - 10 + 1)) + 10;
+  let totalSubscribers = baseSubscribers;
   for (let i = 0; i < daysSinceLaunch; i++) {
-    totalSubscribers += randomGrowth();
+    totalSubscribers += subscriberGrowth();
   }
 
+  // Generate today's visitors
+  const todayVisitors = Math.floor(Math.random() * (1000 - 500 + 1)) + 500;
+
+  // Display
   document.getElementById('subscriber-display').textContent =
-    `Subscribers: ${totalSubscribers.toLocaleString()}`;
+    `Subscribers: ${totalSubscribers.toLocaleString()} | Today's Visitors: ${todayVisitors.toLocaleString()}`;
 
   document.getElementById('current-year').textContent = today.getFullYear();
 })();
