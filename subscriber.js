@@ -3,7 +3,7 @@
   const launchDate = new Date('2015-01-01');
   const today = new Date();
   const daysSinceLaunch = Math.floor((today - launchDate) / (1000 * 60 * 60 * 24));
-  const randomGrowth = () => Math.floor(Math.random() * (200 - 100 + 1)) + 100;
+  const randomGrowth = () => Math.floor(Math.random() * (100 - 50 + 1)) + 50;
   let totalSubscribers = baseSubscribers;
 
   for (let i = 0; i < daysSinceLaunch; i++) {
