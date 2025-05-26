@@ -1,3 +1,4 @@
+/* General styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -10,6 +11,7 @@ body {
   padding: 20px;
 }
 
+/* Header styles */
 header.main-header {
   padding: 3rem 1rem;
   text-align: center;
@@ -20,6 +22,13 @@ header.main-header {
   color: white;
 }
 
+.gray-header h1,
+.gray-header p,
+.gray-header h2 {
+  color: white;
+}
+
+/* Footer styles */
 footer {
   text-align: center;
   padding: 1rem 0;
@@ -28,6 +37,7 @@ footer {
   margin-top: 40px;
 }
 
+/* Blog links and general links */
 a {
   color: #0077cc;
   text-decoration: none;
@@ -35,4 +45,20 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Blog post comments section */
+.comments {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ccc;
+}
+
+.comments p {
+  margin: 0.5rem 0;
+}
+
+/* Blog post author text */
+main p strong {
+  color: #000;
 }
