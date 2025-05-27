@@ -1,21 +1,20 @@
-/* Base Styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #ffffff;
   color: #333;
   margin: 0;
   padding: 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 
 header {
   background-color: #4a4a4a;
   color: #fff;
-  text-align: center;
   padding: 20px;
-  flex: 0 0 35%;
+  text-align: center;
+  flex: 0 0 35vh;
   box-sizing: border-box;
 }
 
@@ -29,16 +28,16 @@ header h1 {
 }
 
 .container {
-  flex: 0 0 55%;
-  padding: 20px;
+  flex: 0 0 55vh;
   box-sizing: border-box;
+  padding: 20px;
 }
 
 footer {
-  flex: 0 0 10%;
   background-color: #f0f0f0;
   text-align: center;
   padding: 10px;
+  flex: 0 0 10vh;
   font-size: 14px;
   color: #666;
   box-sizing: border-box;
@@ -83,15 +82,16 @@ footer {
   color: #777;
 }
 
-/* Desktop View Enhancements */
+/* Desktop Enhancements */
 @media (min-width: 1024px) {
   .container {
-    max-width: 60%;
+    width: 60%;
     margin: 0 auto;
+    padding: 40px 0;
   }
 
   .blog-page {
-    max-width: 60%;
+    width: 60%;
     margin: 0 auto;
   }
 }
