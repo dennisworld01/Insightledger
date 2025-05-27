@@ -1,135 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>InsightLedger - Home</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #fff;
-      color: #333;
-    }
-
-    .header {
-      padding: 20px;
-      text-align: center;
-    }
-
-    .stats {
-      font-size: 14px;
-      color: #666;
-      margin-bottom: 20px;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 100%;
-      padding: 20px;
-      margin: 0 auto;
-    }
-
-    @media (min-width: 768px) {
-      .container {
-        width: 60%;
-        max-width: 60%;
-      }
-    }
-
-    .topic-card {
-      margin-bottom: 30px;
-    }
-
-    .topic-card img {
-      max-width: 100%;
-      border-radius: 12px;
-      margin-bottom: 10px;
-    }
-
-    .topic-card h2 {
-      font-size: 22px;
-      margin-bottom: 10px;
-    }
-
-    .topic-card p {
-      font-size: 16px;
-      line-height: 1.5;
-      margin-bottom: 10px;
-    }
-
-    .topic-card a {
-      text-decoration: none;
-      color: #5f00d3;
-      font-weight: bold;
-    }
-
-    footer {
-      background-color: #f3f3f3;
-      padding: 20px;
-      text-align: center;
-      font-size: 14px;
-      color: #777;
-    }
-
-    footer a {
-      color: #5f00d3;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
+  <title>InsightLedger | Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <div class="header">
+    <header>
       <h1>InsightLedger</h1>
-      <div class="stats">Followers: 12,000 | Daily Visitors: 3,500</div>
-    </div>
-
-    <div class="topic-card">
-      <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" alt="Dating">
-      <h2>Dating</h2>
-      <p>Explore modern relationships and online dating in the digital age.</p>
-      <a href="dating.html">Read More →</a>
-    </div>
-
-    <div class="topic-card">
-      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Technology">
-      <h2>Technology</h2>
-      <p>Uncover the latest innovations and future tech trends shaping our world.</p>
-      <a href="tech.html">Read More →</a>
-    </div>
-
-    <div class="topic-card">
-      <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="Health">
-      <h2>Health</h2>
-      <p>Discover how wellness and medical advancements are transforming our lives.</p>
-      <a href="health.html">Read More →</a>
-    </div>
-
-    <div class="topic-card">
-      <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437f1" alt="Finance">
-      <h2>Finance</h2>
-      <p>Stay updated on smart money habits and financial strategies for 2025.</p>
-      <a href="finance.html">Read More →</a>
-    </div>
-
-    <div class="topic-card">
-      <img src="https://images.unsplash.com/photo-1588776814546-ec7e4b6d7c9a" alt="Insurance">
-      <h2>Insurance</h2>
-      <p>Get insights into digital insurance, personalized policies, and future trends.</p>
-      <a href="insurance.html">Read More →</a>
-    </div>
+      <p class="site-meta">Subscribers: 2,450 | Daily Visitors: 1,300</p>
+    </header><section class="topics">
+  <div class="topic-card">
+    <a href="dating.html"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" alt="Dating"></a>
+    <h2><a href="dating.html">Dating</a></h2>
   </div>
+  <div class="topic-card">
+    <a href="tech.html"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Tech"></a>
+    <h2><a href="tech.html">Tech</a></h2>
+  </div>
+  <div class="topic-card">
+    <a href="insurance.html"><img src="https://picsum.photos/seed/insurance2025/800/400" alt="Insurance"></a>
+    <h2><a href="insurance.html">Insurance</a></h2>
+  </div>
+  <div class="topic-card">
+    <a href="health.html"><img src="https://picsum.photos/seed/health2025/800/400" alt="Health"></a>
+    <h2><a href="health.html">Health</a></h2>
+  </div>
+  <div class="topic-card">
+    <a href="finance.html"><img src="https://picsum.photos/seed/finance2025/800/400" alt="Finance"></a>
+    <h2><a href="finance.html">Finance</a></h2>
+  </div>
+</section>
 
-  <footer>
-    © 2013–2025 InsightLedger. All rights reserved. |
-    <a href="privacy.html">Privacy Policy</a>
-  </footer>
+<!-- Newsletter Form -->
+<section class="newsletter">
+  <h2>Subscribe to Our Newsletter</h2>
+  <form action="#" method="POST">
+    <input type="email" name="email" placeholder="Enter your email" required />
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+<!-- Social Media Widget Placeholder -->
+<section class="social-media">
+  <h2>Follow Us</h2>
+  <a href="https://facebook.com" target="_blank">Facebook</a> |
+  <a href="https://twitter.com" target="_blank">Twitter</a> |
+  <a href="https://instagram.com" target="_blank">Instagram</a>
+</section>
+
+<footer>
+  <p>&copy; 2013–2025 InsightLedger. All rights reserved. <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+  </div>
 </body>
-</html>
+    </html>
