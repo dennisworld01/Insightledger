@@ -1,113 +1,135 @@
-<!-- Updated index.html with SEO & Affiliate Optimization -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>InsightLedger</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-  <script defer src="script.js"></script>
+  <title>InsightLedger - Home</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="InsightLedger brings you expert blog content on dating, tech, insurance, finance, and health.">
-  <meta property="og:title" content="InsightLedger">
-  <meta property="og:description" content="Expert blog insights on dating, tech, finance, health and insurance.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://insightledger.netlify.app/">
-  <meta property="og:image" content="https://insightledger.netlify.app/preview.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="InsightLedger">
-  <meta name="twitter:description" content="Expert blog insights on dating, tech, finance, health and insurance.">
-  <meta name="twitter:image" content="https://insightledger.netlify.app/preview.jpg">
-  <link rel="canonical" href="https://insightledger.netlify.app/" />
-  <meta name="mylead-verification" content="0ce7617e6ed4dc347c01433c43330def">
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
 
-  <!-- Schema Markup -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "InsightLedger",
-    "url": "https://insightledger.netlify.app",
-    "logo": "https://insightledger.netlify.app/logo.png",
-    "sameAs": [
-      "https://facebook.com/insightledger",
-      "https://twitter.com/insightledger"
-    ]
-  }
-  </script>
+    .header {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .stats {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 100%;
+      padding: 20px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        width: 60%;
+        max-width: 60%;
+      }
+    }
+
+    .topic-card {
+      margin-bottom: 30px;
+    }
+
+    .topic-card img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+
+    .topic-card h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .topic-card p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    .topic-card a {
+      text-decoration: none;
+      color: #5f00d3;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #f3f3f3;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+    }
+
+    footer a {
+      color: #5f00d3;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-  <div class="layout">
-    <header>
-      <div class="header-wrapper">
-        <h1>InsightLedger</h1>
-        <div class="stats">
-          <div id="Followers-count">Followers: ...</div>
-          <div id="visitor-count">Today's Visitors: ...</div>
-        </div>
-      </div>
-    </header>
+  <div class="container">
+    <div class="header">
+      <h1>InsightLedger</h1>
+      <div class="stats">Subscribers: 12,000 | Daily Visitors: 3,500</div>
+    </div>
 
-    <main class="container">
-      <a href="dating.html?utm_source=blog&utm_medium=button&utm_campaign=dating-offer" class="blog-link">Dating Tips</a>
-      <a href="tech.html?utm_source=blog&utm_medium=button&utm_campaign=tech-offer" class="blog-link">Technology Trends</a>
-      <a href="insurance.html?utm_source=blog&utm_medium=button&utm_campaign=insurance-offer" class="blog-link">Insurance Insights</a>
-      <a href="finance.html?utm_source=blog&utm_medium=button&utm_campaign=finance-offer" class="blog-link">Personal Finance</a>
-      <a href="health.html?utm_source=blog&utm_medium=button&utm_campaign=health-offer" class="blog-link">Health and Wellness</a>
-    </main>
+    <div class="topic-card">
+      <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" alt="Dating">
+      <h2>Dating</h2>
+      <p>Explore modern relationships and online dating in the digital age.</p>
+      <a href="dating.html">Read More →</a>
+    </div>
 
-    <footer>
-      <div class="footer-wrapper">
-        <p>© InsightLedger - Established 2013 | <a href="privacy.html">Privacy Policy</a></p>
-      </div>
-    </footer>
+    <div class="topic-card">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Technology">
+      <h2>Technology</h2>
+      <p>Uncover the latest innovations and future tech trends shaping our world.</p>
+      <a href="tech.html">Read More →</a>
+    </div>
+
+    <div class="topic-card">
+      <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="Health">
+      <h2>Health</h2>
+      <p>Discover how wellness and medical advancements are transforming our lives.</p>
+      <a href="health.html">Read More →</a>
+    </div>
+
+    <div class="topic-card">
+      <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437f1" alt="Finance">
+      <h2>Finance</h2>
+      <p>Stay updated on smart money habits and financial strategies for 2025.</p>
+      <a href="finance.html">Read More →</a>
+    </div>
+
+    <div class="topic-card">
+      <img src="https://images.unsplash.com/photo-1588776814546-ec7e4b6d7c9a" alt="Insurance">
+      <h2>Insurance</h2>
+      <p>Get insights into digital insurance, personalized policies, and future trends.</p>
+      <a href="insurance.html">Read More →</a>
+    </div>
   </div>
-</body>
-</html>
 
-<!-- privacy.html page -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - InsightLedger</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="layout">
-    <header>
-      <div class="header-wrapper">
-        <h1>Privacy Policy</h1>
-      </div>
-    </header>
-
-    <main class="container">
-      <p>Your privacy is important to us. At InsightLedger, we respect your privacy regarding any information we may collect from you across our website, https://insightledger.netlify.app, and other sites we own and operate.</p>
-
-      <h2>Information We Collect</h2>
-      <p>We collect information to provide better services to our users. This includes non-personally identifiable information and, when provided, personal data such as email addresses.</p>
-
-      <h2>Affiliate Disclosure</h2>
-      <p>Our site contains affiliate links, which means we may earn a commission if you click and sign up or purchase through those links. This comes at no extra cost to you.</p>
-
-      <h2>Cookies</h2>
-      <p>We use cookies to enhance user experience, track affiliate links, and analyze website traffic.</p>
-
-      <h2>Third-Party Services</h2>
-      <p>We may use third-party services (e.g., analytics or affiliate networks) that collect, monitor, and analyze this type of information to improve our service.</p>
-
-      <h2>Your Consent</h2>
-      <p>By using our website, you consent to our privacy policy.</p>
-    </main>
-
-    <footer>
-      <div class="footer-wrapper">
-        <p>© InsightLedger - Established 2013</p>
-      </div>
-    </footer>
-  </div>
+  <footer>
+    © 2013–2025 InsightLedger. All rights reserved. |
+    <a href="privacy.html">Privacy Policy</a>
+  </footer>
 </body>
 </html>
