@@ -19,26 +19,34 @@ html, body {
   background-color: #ffffff;
   padding: 20px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Layout container */
 .layout {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
 }
 
-/* Header = 35% of screen height */
+/* Header (no background here anymore) */
 header {
   height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+/* Inner header with background */
+.inner-header {
   background-color: #4a4a4a;
   color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Vertical centering */
-  align-items: center;     /* Horizontal centering */
-  text-align: center;
+  width: 100%;
   padding: 20px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 header h1 {
@@ -60,7 +68,7 @@ header h1 {
 /* Desktop layout */
 @media (min-width: 768px) {
   .container {
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -81,13 +89,21 @@ header h1 {
   background-color: #e0e0e0;
 }
 
-/* Footer = 10% of screen height */
+/* Footer (no background here anymore) */
 footer {
   height: 10vh;
-  background-color: #f1f1f1;
   display: flex;
-  justify-content: center;  /* Horizontal centering */
-  align-items: center;      /* Vertical centering */
-  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+/* Inner footer with background */
+.inner-footer {
+  background-color: #f1f1f1;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
   text-align: center;
+  font-size: 14px;
 }
