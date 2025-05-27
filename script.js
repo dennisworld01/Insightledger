@@ -1,9 +1,24 @@
+document.addEventListener("DOMContentLoaded", () => {
+  // Follower count setup
+  const followerElement = document.getElementById("follower-count");
+  let baseFollowerCount = 7429;
+  const dailyFollowerIncrease = Math.floor(Math.random() * 11) + 10; // 10-20
+  const storedFollowers = localStorage.getItem("followerCount");
+  const storedDate = localStorage.getItem("followerDate");
+  const today = new Date().toDateString();
 
-document.addEventListener("DOMContentLoaded", function() {
-  const baseSubscribers = 7429;
-  const newSubs = Math.floor(Math.random() * (20 - 10 + 1)) + 10;
-  const visitors = Math.floor(Math.random() * (3000 - 2000 + 1)) + 2000;
+  if (storedDate !== today) {
+    baseFollowerCount = storedFollowers ? parseInt(storedFollowers) + dailyFollowerIncrease : baseFollowerCount + dailyFollowerIncrease;
+    localStorage.setItem("followerCount", baseFollowerCount);
+    localStorage.setItem("followerDate", today);
+  } else {
+    baseFollowerCount = storedFollowers ? parseInt(storedFollowers) : baseFollowerCount;
+  }
 
-  document.getElementById("subscriber-count").innerText = "Subscribers: " + (baseSubscribers + newSubs).toLocaleString();
-  document.getElementById("visitor-count").innerText = "Today's Visitors: " + visitors.toLocaleString();
+  followerElement.innerText = `Followers: ${baseFollowerCount}`;
+
+  // Daily visitors setup
+  const visitorElement = document.getElementById("visitor-count");
+  const dailyVisitors = Math.floor(Math.random() * 1001) + 2000; // 2000–3000
+  visitorElement.innerText = `Visitors Today: ${dailyVisitors}`;
 });
