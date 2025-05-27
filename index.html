@@ -1,57 +1,29 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>InsightLedger</title>
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- MyLead Verification Meta Tag -->
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
   <meta name="mylead-verification" content="0ce7617e6ed4dc347c01433c43330def">
-
-  <script>
-    // Simulate follower and visitor numbers
-    function updateStats() {
-      const baseFollowers = 7429;
-      const dailyVisitors = Math.floor(Math.random() * 1001) + 2000; // 2000–3000
-      const newFollowers = Math.floor(Math.random() * 11) + 10;    // 10–20
-
-      let storedFollows = localStorage.getItem("followers") || baseFollowers;
-      let updatedFollows = parseInt(storedFollows) + newFollowers;
-
-      document.getElementById("follower-count").textContent = updatedFollows.toLocaleString();
-      document.getElementById("visits").textContent = dailyVisitors.toLocaleString();
-      localStorage.setItem("followers", updatedFollows);
-    }
-
-    window.onload = updateStats;
-  </script>
+  <!-- mylead-verification: 0ce7617e6ed4dc347c01433c43330def -->
 </head>
 <body>
-  <!-- mylead-verification: 0ce7617e6ed4dc347c01433c43330def -->
-
-  <header class="main-header gray-header">
+  <header>
     <h1>InsightLedger</h1>
-    <p>Your go-to blog for Tech, Dating, Insurance, and more!</p>
+    <div class="stats">
+      <div id="Followers-count">Followers: ...</div>
+      <div id="visitor-count">Today's Visitors: ...</div>
+    </div>
   </header>
-
-  <div class="content-wrapper">
-    <main>
-      <h2>Explore Our Latest Blogs</h2>
-      <ul>
-        <li><a href="tech-blog.html">Top AI Tools for Developers in 2025</a></li>
-        <li><a href="dating-blog.html">Secrets to Online Dating Success in 2025</a></li>
-        <li><a href="insurance-blog.html">Why Insurance in 2025 Is Smarter Than Ever</a></li>
-      </ul>
-
-      <p><strong>Followers:</strong> <span id="follower-count">0</span></p>
-      <p><strong>Visitors Today:</strong> <span id="visits">0</span></p>
-
-      <!-- Token visibly published -->
-      <p><strong>Verification Token:</strong> 0ce7617e6ed4dc347c01433c43330def</p>
-    </main>
-
-    <a href="new-blog.html" class="add-blog-btn">Add New Blog</a>
+  <div class="container">
+    <a href="dating.html" class="blog-link">Dating Tips</a>
+    <a href="tech.html" class="blog-link">Technology Trends</a>
+    <a href="insurance.html" class="blog-link">Insurance Insights</a>
+    <a href="finance.html" class="blog-link">Personal Finance</a>
+    <a href="health.html" class="blog-link">Health and Wellness</a>
   </div>
 </body>
 </html>
