@@ -11,36 +11,31 @@ html, body {
   color: #333;
 }
 
-/* Wrapper to center the layout on desktop */
-.layout-wrapper {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-}
-
+/* Layout container */
 .layout {
-  width: 100%;
-  max-width: 100%;
   display: flex;
   flex-direction: column;
   height: 100vh;
-}
-
-@media (min-width: 768px) {
-  .layout {
-    width: 60%;
-  }
 }
 
 /* Header = 35% of screen height */
 header {
   height: 35vh;
   display: flex;
+  justify-content: center;  /* Center wrapper horizontally */
+  align-items: center;      /* Center wrapper vertically */
+}
+
+.header-wrapper {
+  width: 60%;
+  height: 100%;
+  background-color: #000000; /* Black background */
+  color: #ffffff;
+  display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertical centering */
-  align-items: center;     /* Horizontal centering */
+  justify-content: center;  /* Center content vertically */
+  align-items: center;      /* Center content horizontally */
   text-align: center;
-  padding: 20px;
 }
 
 header h1 {
@@ -57,6 +52,14 @@ header h1 {
   height: 55vh;
   padding: 20px;
   overflow-y: auto;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .container {
+    width: 60%;
+    margin: 0 auto;
+  }
 }
 
 /* Blog links */
@@ -79,8 +82,18 @@ header h1 {
 footer {
   height: 10vh;
   display: flex;
-  justify-content: center;  /* Horizontal centering */
-  align-items: center;      /* Vertical centering */
-  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-wrapper {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  background-color: #f1f1f1;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
 }
