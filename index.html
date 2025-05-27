@@ -6,21 +6,21 @@
   <title>InsightLedger</title>
   <link rel="stylesheet" href="styles.css">
   <script>
-    // Simulate subscriber and visitor numbers
-    function updateStats() {
-      const baseSubscribers = 7429;
-      const baseVisitors = Math.floor(Math.random() * 501) + 500;
-      const newSubscribers = Math.floor(Math.random() * 11) + 10;
+  // Simulate subscriber and visitor numbers
+  function updateStats() {
+    const baseSubscribers = 7429;
+    const dailyVisitors = Math.floor(Math.random() * 1001) + 2000; // 2000–3000
+    const newSubscribers = Math.floor(Math.random() * 11) + 10;    // 10–20
 
-      let storedSubs = localStorage.getItem("subscribers") || baseSubscribers;
-      let updatedSubs = parseInt(storedSubs) + newSubscribers;
+    let storedSubs = localStorage.getItem("subscribers") || baseSubscribers;
+    let updatedSubs = parseInt(storedSubs) + newSubscribers;
 
-      document.getElementById("sub-count").textContent = updatedSubs.toLocaleString();
-      document.getElementById("visits").textContent = baseVisitors.toLocaleString();
-      localStorage.setItem("subscribers", updatedSubs);
-    }
+    document.getElementById("sub-count").textContent = updatedSubs.toLocaleString();
+    document.getElementById("visits").textContent = dailyVisitors.toLocaleString();
+    localStorage.setItem("subscribers", updatedSubs);
+  }
 
-    window.onload = updateStats;
+  window.onload = updateStats;
   </script>
 </head>
 <body>
