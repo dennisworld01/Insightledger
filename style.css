@@ -18,24 +18,25 @@ html, body {
   height: 100vh;
 }
 
-/* Header = 35% of screen height */
+/* Header = 35% height */
 header {
   height: 35vh;
   display: flex;
-  justify-content: center;  /* Center wrapper horizontally */
-  align-items: center;      /* Center wrapper vertically */
+  justify-content: center;
+  align-items: center;
 }
 
 .header-wrapper {
-  width: 60%;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
   height: 100%;
-  background-color: #000000; /* Black background */
-  color: #ffffff;
   display: flex;
   flex-direction: column;
-  justify-content: center;  /* Center content vertically */
-  align-items: center;      /* Center content horizontally */
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  padding: 20px;
 }
 
 header h1 {
@@ -52,17 +53,9 @@ header h1 {
   height: 55vh;
   padding: 20px;
   overflow-y: auto;
+  width: 100%;
 }
 
-/* Desktop layout */
-@media (min-width: 768px) {
-  .container {
-    width: 60%;
-    margin: 0 auto;
-  }
-}
-
-/* Blog links */
 .blog-link {
   display: block;
   padding: 15px;
@@ -78,7 +71,7 @@ header h1 {
   background-color: #e0e0e0;
 }
 
-/* Footer = 10% of screen height */
+/* Footer = 10% height */
 footer {
   height: 10vh;
   display: flex;
@@ -87,13 +80,22 @@ footer {
 }
 
 .footer-wrapper {
-  width: 60%;
+  background-color: #f1f1f1;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #f1f1f1;
-  border-top: 1px solid #ccc;
   font-size: 14px;
+}
+
+/* Desktop Layout: 60% centered */
+@media (min-width: 768px) {
+  .header-wrapper,
+  .container,
+  .footer-wrapper {
+    width: 60%;
+    margin: 0 auto;
+  }
 }
