@@ -1,20 +1,38 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #333;
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Flex container to split layout */
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* 35% Header */
 header {
   background-color: #4a4a4a;
   color: #fff;
+  flex: 0 0 35%;
   padding: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 header h1 {
   margin: 0;
+  font-size: 2em;
 }
 
 .stats {
@@ -22,8 +40,11 @@ header h1 {
   font-size: 16px;
 }
 
+/* 55% Main content */
 .container {
+  flex: 0 0 55%;
   padding: 20px;
+  overflow-y: auto;
 }
 
 .blog-link {
@@ -40,6 +61,19 @@ header h1 {
   background-color: #e0e0e0;
 }
 
+/* 10% Footer */
+footer {
+  flex: 0 0 10%;
+  background-color: #f2f2f2;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Blog Page Support (optional reuse) */
 .blog-page {
   padding: 20px;
   background-color: #ffffff;
@@ -63,25 +97,4 @@ header h1 {
 .date {
   font-style: italic;
   color: #777;
-}
-
-footer {
-  text-align: center;
-  padding: 15px;
-  background-color: #f1f1f1;
-  font-size: 14px;
-  color: #555;
-}
-
-/* Desktop enhancements */
-@media (min-width: 768px) {
-  .container {
-    max-width: 60%;
-    margin: auto;
-  }
-
-  .blog-page {
-    max-width: 60%;
-    margin: auto;
-  }
 }
