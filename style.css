@@ -11,18 +11,30 @@ html, body {
   color: #333;
 }
 
-/* Layout container */
+/* Wrapper to center the layout on desktop */
+.layout-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
 .layout {
+  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 
+@media (min-width: 768px) {
+  .layout {
+    width: 60%;
+  }
+}
+
 /* Header = 35% of screen height */
 header {
   height: 35vh;
-  background-color: #4a4a4a;
-  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center; /* Vertical centering */
@@ -47,14 +59,6 @@ header h1 {
   overflow-y: auto;
 }
 
-/* Desktop layout */
-@media (min-width: 768px) {
-  .container {
-    width: 60%;
-    margin: 0 auto;
-  }
-}
-
 /* Blog links */
 .blog-link {
   display: block;
@@ -74,7 +78,6 @@ header h1 {
 /* Footer = 10% of screen height */
 footer {
   height: 10vh;
-  background-color: #f1f1f1;
   display: flex;
   justify-content: center;  /* Horizontal centering */
   align-items: center;      /* Vertical centering */
