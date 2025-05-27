@@ -5,18 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Insurance Blog | InsightLedger</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
+      box-sizing: border-box;
       margin: 0;
-      padding: 20px;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
       background-color: #fff;
       color: #333;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
     }
 
     .container {
       width: 100%;
       max-width: 100%;
+      padding: 20px;
       margin: 0 auto;
+      flex: 1;
     }
 
     @media (min-width: 768px) {
@@ -30,6 +42,8 @@
       text-decoration: none;
       color: #5f00d3;
       font-weight: bold;
+      display: inline-block;
+      margin-bottom: 20px;
     }
 
     h1 {
@@ -38,9 +52,10 @@
       margin-bottom: 10px;
     }
 
-    p {
-      font-size: 16px;
-      line-height: 1.6;
+    .date {
+      font-style: italic;
+      color: #666;
+      margin-bottom: 20px;
     }
 
     img {
@@ -49,9 +64,23 @@
       margin: 20px 0;
     }
 
-    .date {
-      font-style: italic;
-      color: #666;
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #f3f3f3;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+    }
+
+    footer a {
+      color: #5f00d3;
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -62,21 +91,22 @@
     <h1>The Future of Insurance in 2025: Smarter, Faster, Personalized</h1>
     <p class="date">Published: 2025</p>
 
-    <img src="https://picsum.photos/seed/insurance2025/800/400" alt="Insurance Blog Image" class="blog-image" />
+    <img src="https://picsum.photos/seed/insurance2025/800/400" alt="Insurance Blog Image" />
 
-    <p>In 2025, the insurance industry is undergoing a major transformation, driven by technology, data, and customer demand for faster, more transparent services. From AI underwriting to real-time claims tracking, insurers are becoming tech companies at their core.</p>
+    <p>In 2025, the insurance industry is undergoing a major transformation...</p>
 
-    <p><strong>1. AI-Powered Policies:</strong> Insurance companies now use machine learning to evaluate risk and personalize plans. Your wearable devices, driving behavior, or online activity can directly influence premiums.</p>
+    <p><strong>1. AI-Powered Policies:</strong> Insurance companies now use machine learning...</p>
+    <p><strong>2. Usage-Based Insurance:</strong> Consumers now pay based on how they live and drive...</p>
+    <p><strong>3. On-Demand Microinsurance:</strong> Going on a weekend trip? Renting a drone?...</p>
+    <p><strong>4. Climate-Resilient Coverage:</strong> As natural disasters become more frequent...</p>
+    <p><strong>5. Blockchain for Transparency:</strong> Claims fraud has dropped significantly...</p>
 
-    <p><strong>2. Usage-Based Insurance:</strong> Consumers now pay based on how they live and drive. Auto insurance is shifting to pay-per-mile models, while health coverage adjusts for wellness data like steps, heart rate, or sleep quality.</p>
-
-    <p><strong>3. On-Demand Microinsurance:</strong> Going on a weekend trip? Renting a drone? Temporary coverage can now be activated in seconds from your smartphone. Microinsurance offers ultra-specific policies with full flexibility.</p>
-
-    <p><strong>4. Climate-Resilient Coverage:</strong> As natural disasters become more frequent, insurers are designing new products for floods, fires, and extreme weather. These include early-warning systems and recovery services.</p>
-
-    <p><strong>5. Blockchain for Transparency:</strong> Claims fraud has dropped significantly with the use of blockchain to verify contracts and transactions. Smart contracts automatically pay valid claims without delays or human error.</p>
-
-    <p>In a hyper-digital era, insurance is no longer a paper-heavy, complicated process. It’s smart, predictive, and part of your everyday digital life. Choosing the right provider now means looking for tech innovation, not just brand name.</p>
+    <p>In a hyper-digital era, insurance is no longer a paper-heavy, complicated process...</p>
   </div>
+
+  <footer>
+    © 2013–2025 InsightLedger. All rights reserved. |
+    <a href="privacy.html">Privacy Policy</a>
+  </footer>
 </body>
 </html>
