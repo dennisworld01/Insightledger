@@ -11,18 +11,22 @@ html, body {
   color: #333;
 }
 
-/* Layout Container */
+/* Layout container */
 .layout {
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 
-/* Header = 35% height */
+/* Header = 35% of screen height */
 header {
   height: 35vh;
   background-color: #4a4a4a;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertical centering */
+  align-items: center;     /* Horizontal centering */
   text-align: center;
   padding: 20px;
 }
@@ -43,7 +47,7 @@ header h1 {
   overflow-y: auto;
 }
 
-/* Desktop width settings */
+/* Desktop layout */
 @media (min-width: 768px) {
   .container {
     width: 60%;
@@ -67,11 +71,13 @@ header h1 {
   background-color: #e0e0e0;
 }
 
-/* Footer = 10% height */
+/* Footer = 10% of screen height */
 footer {
   height: 10vh;
   background-color: #f1f1f1;
-  text-align: center;
-  padding: 10px;
+  display: flex;
+  justify-content: center;  /* Horizontal centering */
+  align-items: center;      /* Vertical centering */
   font-size: 14px;
+  text-align: center;
 }
