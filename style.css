@@ -1,109 +1,67 @@
-* {
-  box-sizing: border-box;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
   margin: 0;
   padding: 0;
 }
 
-html, body {
-  height: 100%;
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #333;
-}
-
-/* Wrapper for the entire page content */
-.page-wrapper {
-  width: 60%;
-  height: 100vh;
-  margin: 0 auto;
-  background-color: #ffffff;
-  padding: 20px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Layout container */
-.layout {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-/* Header (no background here anymore) */
 header {
-  height: 35vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-}
-
-/* Inner header with background */
-.inner-header {
   background-color: #4a4a4a;
   color: #fff;
-  width: 100%;
   padding: 20px;
-  border-radius: 10px;
   text-align: center;
 }
 
 header h1 {
-  margin-bottom: 10px;
+  margin: 0;
 }
 
 .stats {
-  font-size: 16px;
   margin-top: 10px;
+  font-size: 16px;
 }
 
-/* Main Body = 55% height */
 .container {
-  height: 55vh;
   padding: 20px;
-  overflow-y: auto;
 }
 
-/* Desktop layout */
-@media (min-width: 768px) {
-  .container {
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-
-/* Blog links */
 .blog-link {
   display: block;
-  padding: 15px;
+  padding: 10px;
   margin: 10px 0;
   background-color: #f5f5f5;
   text-decoration: none;
   color: #000;
   border-radius: 5px;
-  text-align: center;
 }
 
 .blog-link:hover {
   background-color: #e0e0e0;
 }
 
-/* Footer (no background here anymore) */
-footer {
-  height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
+.blog-page {
+  padding: 20px;
+  background-color: #ffffff;
 }
 
-/* Inner footer with background */
-.inner-footer {
-  background-color: #f1f1f1;
+.blog-image {
   width: 100%;
-  padding: 10px;
+  height: auto;
   border-radius: 10px;
-  text-align: center;
-  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.back-arrow {
+  display: inline-block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+}
+
+.date {
+  font-style: italic;
+  color: #777;
 }
